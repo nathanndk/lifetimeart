@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* Base palette (OKLCH via HSL fallback) */
+  --background: 0 0% 100%;
+  --foreground: 224 71.4% 4.1%;
+
+  /* Primary (indigo-600) */
+  --primary: 243 75% 59%;
+  --primary-foreground: 0 0% 100%;
+
+  /* UI neutrals */
+  --muted: 220 14.3% 95.9%;
+  --muted-foreground: 220 8.9% 46.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71.4% 4.1%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 243 75% 59%;
+
+  /* Radii tokens */
+  --radius-base: 12px;
+  --radius-card: 24px;
+
+  /* Shadows aligned to Figma tokens */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-sm: 0 2px 8px 0 rgb(0 0 0 / 0.06);
+  --shadow-md: 0 6px 16px 0 rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 12px 32px 0 rgb(0 0 0 / 0.12);
+}
+
+.dark{
+  --background: 224 14% 8%;
+  --foreground: 210 40% 98%;
+  --muted: 220 14% 14%;
+  --muted-foreground: 218 11% 65%;
+  --card: 224 14% 10%;
+  --card-foreground: 210 40% 98%;
+  --border: 220 14% 18%;
+  --input: 220 14% 18%;
+  --ring: 243 75% 59%;
+}
+
+/* Global resets */
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.container-px {
+  @apply px-4 sm:px-6 md:px-8;
+}
+
+/* Utility: pixel-perfect letter spacing shortcuts */
+.tracking-display { letter-spacing: -0.01em; }
+.tracking-h2 { letter-spacing: -0.005em; }
