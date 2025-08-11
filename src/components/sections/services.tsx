@@ -17,12 +17,12 @@ const FALLBACK_SLUG = "kitchens";
 const GLOBAL_FALLBACK = "/images/services-kitchens.jpg";
 
 const IMAGES: Record<string, string> = {
-  kitchens: "/images/works/Kitchen.png",
-  loft: "/images/works/LoftConversions.png",
-  bathrooms: "/images/works/Bathroom.png",
-  extensions: "/images/works/Extension.png",
-  restorations: "/images/works/Restoration.png",
-  external: "/images/works/ExternalWorks.png",
+  kitchens: "/images/services/Kitchen.png",
+  loft: "/images/services/LoftConversions.png",
+  bathrooms: "/images/services/Bathroom.png",
+  extensions: "/images/services/Extension.png",
+  restorations: "/images/services/Restoration.png",
+  external: "/images/services/ExternalWorks.png",
 };
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];

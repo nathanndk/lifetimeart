@@ -262,7 +262,7 @@ export default function Hero() {
           >
             <div className="relative h-[560px] sm:h-[620px] lg:h-[720px] xl:h-[760px]">
               <Image
-                src="/images/hero-desktop.png"
+                src="/images/hero/hero-desktop.png"
                 alt="Warm modern kitchen with framed palm artwork above a wooden dining table."
                 fill
                 priority
