@@ -423,7 +423,7 @@ export default function Hero() {
             >
               <div className="relative h-[820px]">
                 <Image
-                  src="/images/hero-desktop.png"
+                  src="/images/hero/hero-desktop.png"
                   alt="Warm modern kitchen with framed palm artwork above a wooden dining table."
                   fill
                   priority
@@ -472,7 +472,7 @@ export default function Hero() {
           >
             <div className="relative h-[860px]">
               <Image
-                src="/images/hero-desktop.png"
+                src="/images/hero/hero-desktop.png"
                 alt="Warm modern kitchen with framed palm artwork above a wooden dining table."
                 fill
                 priority
