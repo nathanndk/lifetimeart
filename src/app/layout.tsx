@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import "./../styles/globals.css";
-import { Inter } from "next/font/google";
-// import { SiteHeader } from "@/components/layout/SiteHeader";
+import { Manrope } from "next/font/google";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-manrope",
   preload: true,
-  weight: ["400", "500", "700", "800"],
+  // Tambahkan bobot yang Anda pakai di proyek
+  weight: ["300", "400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -49,8 +49,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased`}>
-        {/* <SiteHeader /> */}
+      {/* Pakai variable Manrope + jadikan default sans */}
+      <body className={`${manrope.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

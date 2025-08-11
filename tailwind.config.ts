@@ -5,13 +5,11 @@ const config: Config = {
   content: [
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./styles/**/*.{css}",
+    "./src/**/*.{ts,tsx}",
+    "./src/styles/**/*.{css}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-inter)"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,9 +20,21 @@ const config: Config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
           DEFAULT: "hsl(var(--card))",
@@ -32,33 +42,23 @@ const config: Config = {
         },
       },
       borderRadius: {
-        lg: "var(--radius-base)",
-        xl: "calc(var(--radius-base) + 4px)",
-        "2xl": "var(--radius-card)",
-        full: "9999px",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
-      boxShadow: {
-        xs: "var(--shadow-xs)",
-        sm: "var(--shadow-sm)",
-        md: "var(--shadow-md)",
-        lg: "var(--shadow-lg)",
-      },
-      letterSpacing: {
-        display: "-0.01em", // -1%
-        h2: "-0.005em", // -0.5%
-        body: "0em",
-      },
-      maxWidth: {
-        "container-1960": "1960px",
-        "container-1440": "1440px",
-        "container-1280": "1280px",
-        "container-1024": "1024px",
-        "container-768": "768px",
-        "container-375": "375px",
+      fontFamily: {
+        // pakai Manrope (atau ubah sesuai font Anda)
+        sans: [
+          "var(--font-manrope)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
     },
   },
-  plugins: [],
+  // plugin opsional; hapus jika tidak dipakai
+  // plugins: [require("tailwindcss-animate")],
 };
 
 export default config;
